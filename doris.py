@@ -1,10 +1,10 @@
 import discord
-from discord.ext import commands
 import openai
 
 openai.api_key = "INSERT_KEY_HERE"
 discord_bot_token = "INSERT_TOKEN_HERE"
-bot_name = "ENTER_BOT_NAME"
+bot_name = "ENTER_BOT_NAME" # Change to the bot name you created (i.e. Doris)
+ai_model = "text-davinci-003" # Change model to text-ada-001 if you want the fastest model
 
 # Change to match perms
 intents = discord.Intents.all()
@@ -31,8 +31,7 @@ async def on_message(message):
    
 
     response = openai.Completion.create(
-        # Change model to text-ada-001 if you want the fastest model
-        engine="text-davinci-003",
+        engine=ai_model,
         prompt=conversation,
         max_tokens=1900,
         temperature=0.7,
@@ -40,8 +39,7 @@ async def on_message(message):
     )
 
     response_text = response['choices'][0]['text']
-    # Change 'Doris' to the bot name you created (assuming its not Doris)
-    response_text = response_text.replace(f"{}: ", "").format(bot_name)
+    response_text = response_text.replace(f"{bot_name}: ", "")
     print(conversation)
     await message.channel.send(response_text)
 
