@@ -26,10 +26,12 @@ Note that I have yet to actually make it into a Discord command, so the script j
 
 
 # Python Requirements
+```
 discord
 configparser
 openai
 requests
+```
 
 
 # Run
