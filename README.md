@@ -23,3 +23,15 @@ To call the image bot:
 `/imagine {prompt}` 
 
 Note that I have yet to actually make it into a Discord command, so the script just checks to see if '/imagine' is in the request and uses the rest of the message as a prompt.
+
+
+# Python Requirements
+discord
+configparser
+openai
+requests
+
+
+# Run
+Run the bot with the following terminal command:
+`python3 main.py`
