@@ -1,5 +1,5 @@
 # Text and Image Discord Bot
-A Discord bot that connects to GPT-3 (default model: text-davinci-003) in context of the conversation. 
+A Discord bot that connects to GPT-3 (default model: text-davinci-003) and keeps the context of the conversation, so you can ask leading questions. There is also Dalle 2 integration where you can generate images based on the message (as long as the command is invoked).
 
 # Configuration in config.ini
 ```
