@@ -14,8 +14,6 @@ model = text-davinci-003
 bot_token = INSERT_BOT_TOKEN
 ```
 
-This bot by requires 'Administrator' privilges, which will be changed asap.
-
 # Commands
 To interact with the text bot, you don't require any commands, simply type and it will respond.
 
