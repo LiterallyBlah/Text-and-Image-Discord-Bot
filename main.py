@@ -13,7 +13,7 @@ ai_model = config['bot']['model']
 discord_bot_token = config['discord']['bot_token']
 
 # set intents
-intents = discord.Intents.all()
+intents = discord.Intents.default()
 
 # set discord client
 client = discord.Client(intents=intents)
