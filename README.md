@@ -1,4 +1,4 @@
-# Doris
+# Text and Image Discord Bot
 A Discord bot that connects to GPT-3 (default model: text-davinci-003) in context of the conversation. 
 
 # Configuration in config.ini
